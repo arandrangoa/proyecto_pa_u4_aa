@@ -114,6 +114,12 @@ public class MainInterfacesFuncionales {
 			return cadena;
 		});
 		listaCambiada.forEach(cadena -> LOG.info(cadena));
+		
+		Stream<Integer> listaCambiada2=listaNumeros.stream().map(numeroLista->{
+			Integer valorFinal=numeroLista+1;
+			return valorFinal;
+		});
+		listaCambiada2.forEach(numero -> LOG.info("Valor entero: "+numero));
 
 		// 5.UNARYOPERATOR
 		LOG.info("5.UNARYOPERATOR ");
